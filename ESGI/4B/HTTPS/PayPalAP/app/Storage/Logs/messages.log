@@ -1,0 +1,29 @@
+
+Pretending to mail message to: john@novaframework
+
+Message-ID: <5a852b73d1dec32c6baa4958b1838933@unittest-fabiensebban.c9users.io>
+Date: Tue, 05 Jul 2016 23:21:35 +0100
+Subject: Welcome!
+From: Administrator <admin@novaframework>
+To: John Smith <john@novaframework>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h1>Welcome to Nova 3.0!</h1>
+
+This is a test!!!
+Pretending to mail message to: john@novaframework
+
+Message-ID: <cee360e4a48468c1f53ebd0f4de68d66@unittest-fabiensebban.c9users.io>
+Date: Tue, 05 Jul 2016 23:29:43 +0100
+Subject: Welcome!
+From: Administrator <admin@novaframework>
+To: John Smith <john@novaframework>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<h1>Welcome to Nova 3.0!</h1>
+
+This is a test!!!

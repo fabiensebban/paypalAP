@@ -1,0 +1,471 @@
+[08-Jul-2016 07:50:08 Europe/London] PHP Fatal error:  Class 'App\Controllers\Url' not found in /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php on line 88
+[08-Jul-2016 07:50:08 Europe/London] PHP Stack trace:
+[08-Jul-2016 07:50:08 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 07:50:08 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 07:50:08 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 07:50:08 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 07:50:08 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 07:50:08 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 07:50:08 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 07:50:08 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 07:50:08 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 07:50:08 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 07:50:08 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 07:50:08 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 07:50:08 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 07:50:08 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[08-Jul-2016 07:50:08 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[08-Jul-2016 07:50:08 Europe/London] PHP  16. App\Controllers\Subscription->subscribe() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[08-Jul-2016 07:50:33 Europe/London] PHP Fatal error:  Class 'App\Controllers\Url' not found in /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php on line 88
+[08-Jul-2016 07:50:33 Europe/London] PHP Stack trace:
+[08-Jul-2016 07:50:33 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 07:50:33 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 07:50:33 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 07:50:33 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 07:50:33 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 07:50:33 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 07:50:33 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 07:50:33 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 07:50:33 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 07:50:33 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 07:50:33 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 07:50:33 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 07:50:33 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 07:50:33 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[08-Jul-2016 07:50:33 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[08-Jul-2016 07:50:33 Europe/London] PHP  16. App\Controllers\Subscription->subscribe() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[08-Jul-2016 19:17:35 Europe/London] PHP Fatal error:  Call to undefined method App\Controllers\Subscription::loadModel() in /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php on line 37
+[08-Jul-2016 19:17:35 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:17:35 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:17:35 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:17:35 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:17:35 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:17:35 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:17:35 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:17:35 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:17:35 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:17:35 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:17:35 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:17:35 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:17:35 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:17:35 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:17:35 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:28:41 Europe/London] PHP Fatal error:  Class App\Models\User contains 6 abstract methods and must therefore be declared abstract or implement the remaining methods (Auth\UserInterface::getAuthIdentifier, Auth\UserInterface::getAuthPassword, Auth\UserInterface::getRememberToken, ...) in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 35
+[08-Jul-2016 19:28:41 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:28:41 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:28:41 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:28:41 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:28:41 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:28:41 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:28:41 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:28:41 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:28:41 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:28:41 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:28:41 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:28:41 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:28:41 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:28:41 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:28:41 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:28:41 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:28:41 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:28:41 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:28:41 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:28:49 Europe/London] PHP Fatal error:  Class App\Models\User contains 6 abstract methods and must therefore be declared abstract or implement the remaining methods (Auth\UserInterface::getAuthIdentifier, Auth\UserInterface::getAuthPassword, Auth\UserInterface::getRememberToken, ...) in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 35
+[08-Jul-2016 19:28:49 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:28:49 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:28:49 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:28:49 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:28:49 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:28:49 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:28:49 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:28:49 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:28:49 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:28:49 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:28:49 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:28:49 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:28:49 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:28:49 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:28:49 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:28:49 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:28:49 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:28:49 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:28:49 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:29:44 Europe/London] PHP Fatal error:  Class App\Models\User contains 6 abstract methods and must therefore be declared abstract or implement the remaining methods (Auth\UserInterface::getAuthIdentifier, Auth\UserInterface::getAuthPassword, Auth\UserInterface::getRememberToken, ...) in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 35
+[08-Jul-2016 19:29:44 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:29:44 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:29:44 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:29:44 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:29:44 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:29:44 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:29:44 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:29:44 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:29:44 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:29:44 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:29:44 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:29:44 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:29:44 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:29:44 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:29:44 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:29:44 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:29:44 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:29:44 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:29:44 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:30:49 Europe/London] PHP Fatal error:  Class 'App\Models\Model' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 17
+[08-Jul-2016 19:30:49 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:30:49 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:30:49 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:30:49 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:30:49 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:30:49 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:30:49 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:30:49 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:30:49 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:30:49 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:30:49 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:30:49 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:30:49 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:30:49 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:30:49 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:30:49 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:30:49 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:30:49 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:30:49 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:30:52 Europe/London] PHP Fatal error:  Class 'App\Models\Model' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 17
+[08-Jul-2016 19:30:52 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:30:52 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:30:52 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:30:52 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:30:52 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:30:52 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:30:52 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:30:52 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:30:52 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:30:52 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:30:52 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:30:52 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:30:52 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:30:52 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:30:52 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:30:52 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:30:52 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:30:52 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:30:52 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:39:33 Europe/London] PHP Fatal error:  Class 'App\Models\Database' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 22
+[08-Jul-2016 19:39:33 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:39:33 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:39:33 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:39:33 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:39:33 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:39:33 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:39:33 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:39:33 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:39:33 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:39:33 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:39:33 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:39:33 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:39:33 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:39:33 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:39:33 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:39:33 Europe/London] PHP  15. App\Models\User->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php:37
+[08-Jul-2016 19:41:54 Europe/London] PHP Fatal error:  Class 'system\Core\Model' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 14
+[08-Jul-2016 19:41:54 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:41:54 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:41:54 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:41:54 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:41:54 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:41:54 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:41:54 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:41:54 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:41:54 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:41:54 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:41:54 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:41:54 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:41:54 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:41:54 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:41:54 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:41:54 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:41:54 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:41:54 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:41:54 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:42:15 Europe/London] PHP Fatal error:  Class 'System\Core\Model' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 14
+[08-Jul-2016 19:42:15 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:42:15 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:42:15 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:42:15 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:42:15 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:42:15 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:42:15 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:42:15 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:42:15 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:42:15 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:42:15 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:42:15 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:42:15 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:42:15 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:42:15 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:42:15 Europe/London] PHP  15. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:42:15 Europe/London] PHP  16. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:37
+[08-Jul-2016 19:42:15 Europe/London] PHP  17. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[08-Jul-2016 19:42:15 Europe/London] PHP  18. include() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:412
+[08-Jul-2016 19:43:39 Europe/London] PHP Fatal error:  Class 'App\Models\Database' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 16
+[08-Jul-2016 19:43:39 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:43:39 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:43:39 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:43:39 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:43:39 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:43:39 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:43:39 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:43:39 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:43:39 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:43:39 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:43:39 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:43:39 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:43:39 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:43:39 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:43:39 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:43:39 Europe/London] PHP  15. App\Models\User->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php:37
+[08-Jul-2016 19:48:09 Europe/London] PHP Fatal error:  Class 'App\Models\Database' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 16
+[08-Jul-2016 19:48:09 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:48:09 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:48:09 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:48:09 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:48:09 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:48:09 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:48:09 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:48:09 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:48:09 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:48:09 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:48:09 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:48:09 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:48:09 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:48:09 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:48:09 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:48:09 Europe/London] PHP  15. App\Models\User->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php:37
+[08-Jul-2016 19:48:55 Europe/London] PHP Fatal error:  Class 'App\Models\Database' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 16
+[08-Jul-2016 19:48:55 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:48:55 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:48:55 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:48:55 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:48:55 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:48:55 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:48:55 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:48:55 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:48:55 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:48:55 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:48:55 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:48:55 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:48:55 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:48:55 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:48:55 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:48:55 Europe/London] PHP  15. App\Models\User->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php:37
+[08-Jul-2016 19:49:27 Europe/London] PHP Fatal error:  Class 'Core\Model\Database' not found in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 16
+[08-Jul-2016 19:49:27 Europe/London] PHP Stack trace:
+[08-Jul-2016 19:49:27 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[08-Jul-2016 19:49:27 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[08-Jul-2016 19:49:27 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[08-Jul-2016 19:49:27 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[08-Jul-2016 19:49:27 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[08-Jul-2016 19:49:27 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[08-Jul-2016 19:49:27 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[08-Jul-2016 19:49:27 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[08-Jul-2016 19:49:27 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[08-Jul-2016 19:49:27 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[08-Jul-2016 19:49:27 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[08-Jul-2016 19:49:27 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[08-Jul-2016 19:49:27 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[08-Jul-2016 19:49:27 Europe/London] PHP  14. App\Controllers\Subscription->__construct() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:435
+[08-Jul-2016 19:49:27 Europe/London] PHP  15. App\Models\User->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Subscription.php:37
+[09-Jul-2016 17:39:29 Europe/London] PHP Fatal error:  Cannot declare class App\Controllers\Paypal because the name is already in use in /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php on line 20
+[09-Jul-2016 17:39:29 Europe/London] PHP Stack trace:
+[09-Jul-2016 17:39:29 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[09-Jul-2016 17:39:29 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[09-Jul-2016 17:39:29 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[09-Jul-2016 17:39:29 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[09-Jul-2016 17:39:29 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[09-Jul-2016 17:39:29 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[09-Jul-2016 17:39:29 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[09-Jul-2016 17:39:29 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[09-Jul-2016 17:39:29 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[09-Jul-2016 17:39:29 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[09-Jul-2016 17:39:29 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[09-Jul-2016 17:39:29 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[09-Jul-2016 17:39:29 Europe/London] PHP  13. class_exists() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[09-Jul-2016 17:39:29 Europe/London] PHP  14. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[09-Jul-2016 17:39:29 Europe/London] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[09-Jul-2016 17:39:29 Europe/London] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[09-Jul-2016 17:40:53 Europe/London] PHP Fatal error:  Call to undefined function App\Controllers\isValidPayPost() in /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php on line 38
+[09-Jul-2016 17:40:53 Europe/London] PHP Stack trace:
+[09-Jul-2016 17:40:53 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[09-Jul-2016 17:40:53 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[09-Jul-2016 17:40:53 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[09-Jul-2016 17:40:53 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[09-Jul-2016 17:40:53 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[09-Jul-2016 17:40:53 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[09-Jul-2016 17:40:53 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[09-Jul-2016 17:40:53 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[09-Jul-2016 17:40:53 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[09-Jul-2016 17:40:53 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[09-Jul-2016 17:40:53 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[09-Jul-2016 17:40:53 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[09-Jul-2016 17:40:53 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[09-Jul-2016 17:40:53 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[09-Jul-2016 17:40:53 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 17:40:53 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 19:28:41 Europe/London] PHP Fatal error:  Call to a member function get() on a non-object in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php on line 14
+[09-Jul-2016 19:28:41 Europe/London] PHP Stack trace:
+[09-Jul-2016 19:28:41 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[09-Jul-2016 19:28:41 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[09-Jul-2016 19:28:41 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[09-Jul-2016 19:28:41 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[09-Jul-2016 19:28:41 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[09-Jul-2016 19:28:41 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[09-Jul-2016 19:28:41 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[09-Jul-2016 19:28:41 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[09-Jul-2016 19:28:41 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[09-Jul-2016 19:28:41 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[09-Jul-2016 19:28:41 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[09-Jul-2016 19:28:41 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[09-Jul-2016 19:28:41 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[09-Jul-2016 19:28:41 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[09-Jul-2016 19:28:41 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 19:28:41 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 19:28:41 Europe/London] PHP  17. Helpers\PaypalAP->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php:42
+[09-Jul-2016 19:29:22 Europe/London] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 33
+[09-Jul-2016 19:29:22 Europe/London] PHP Stack trace:
+[09-Jul-2016 19:29:22 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[09-Jul-2016 19:29:22 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[09-Jul-2016 19:29:22 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[09-Jul-2016 19:29:22 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[09-Jul-2016 19:29:22 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[09-Jul-2016 19:29:22 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[09-Jul-2016 19:29:22 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[09-Jul-2016 19:29:22 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[09-Jul-2016 19:29:22 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[09-Jul-2016 19:29:22 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[09-Jul-2016 19:29:22 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[09-Jul-2016 19:29:22 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[09-Jul-2016 19:29:22 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[09-Jul-2016 19:29:22 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[09-Jul-2016 19:29:22 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 19:29:22 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[09-Jul-2016 19:29:22 Europe/London] PHP  17. Helpers\PaypalAP->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php:42
+[09-Jul-2016 19:29:22 Europe/London] PHP  18. App\Models\User->getUser() /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php:13
+[10-Jul-2016 13:25:47 Europe/London] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 33
+[10-Jul-2016 13:25:47 Europe/London] PHP Stack trace:
+[10-Jul-2016 13:25:47 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[10-Jul-2016 13:25:47 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[10-Jul-2016 13:25:47 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[10-Jul-2016 13:25:47 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[10-Jul-2016 13:25:47 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[10-Jul-2016 13:25:47 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[10-Jul-2016 13:25:47 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[10-Jul-2016 13:25:47 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[10-Jul-2016 13:25:47 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[10-Jul-2016 13:25:47 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[10-Jul-2016 13:25:47 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[10-Jul-2016 13:25:47 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[10-Jul-2016 13:25:47 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[10-Jul-2016 13:25:47 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[10-Jul-2016 13:25:47 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[10-Jul-2016 13:25:47 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[10-Jul-2016 13:25:47 Europe/London] PHP  17. Helpers\PaypalAP->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php:42
+[10-Jul-2016 13:25:47 Europe/London] PHP  18. App\Models\User->getUser() /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php:16
+[10-Jul-2016 13:26:16 Europe/London] PHP Fatal error:  Call to a member function first() on a non-object in /home/ubuntu/workspace/PayPalAP/app/Models/User.php on line 33
+[10-Jul-2016 13:26:16 Europe/London] PHP Stack trace:
+[10-Jul-2016 13:26:16 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[10-Jul-2016 13:26:16 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[10-Jul-2016 13:26:16 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[10-Jul-2016 13:26:16 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[10-Jul-2016 13:26:16 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[10-Jul-2016 13:26:16 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[10-Jul-2016 13:26:16 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[10-Jul-2016 13:26:16 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[10-Jul-2016 13:26:16 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[10-Jul-2016 13:26:16 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[10-Jul-2016 13:26:16 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[10-Jul-2016 13:26:16 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[10-Jul-2016 13:26:16 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[10-Jul-2016 13:26:16 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[10-Jul-2016 13:26:16 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[10-Jul-2016 13:26:16 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[10-Jul-2016 13:26:16 Europe/London] PHP  17. Helpers\PaypalAP->__construct() /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php:42
+[10-Jul-2016 13:26:16 Europe/London] PHP  18. App\Models\User->getUser() /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php:16
+[10-Jul-2016 21:17:46 Europe/London] PHP Parse error:  syntax error, unexpected 'json_encode' (T_STRING) in /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php on line 44
+[10-Jul-2016 21:17:46 Europe/London] PHP Stack trace:
+[10-Jul-2016 21:17:46 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[10-Jul-2016 21:17:46 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[10-Jul-2016 21:17:46 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[10-Jul-2016 21:17:46 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[10-Jul-2016 21:17:46 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[10-Jul-2016 21:17:46 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[10-Jul-2016 21:17:46 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[10-Jul-2016 21:17:46 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[10-Jul-2016 21:17:46 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[10-Jul-2016 21:17:46 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[10-Jul-2016 21:17:46 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[10-Jul-2016 21:17:46 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[10-Jul-2016 21:17:46 Europe/London] PHP  13. class_exists() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[10-Jul-2016 21:17:46 Europe/London] PHP  14. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[10-Jul-2016 21:17:46 Europe/London] PHP  15. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:470
+[10-Jul-2016 21:17:46 Europe/London] PHP  16. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[13-Jul-2016 14:57:43 Europe/London] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php on line 93
+[13-Jul-2016 14:57:43 Europe/London] PHP Stack trace:
+[13-Jul-2016 14:57:43 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[13-Jul-2016 14:57:43 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[13-Jul-2016 14:57:43 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[13-Jul-2016 14:57:43 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[13-Jul-2016 14:57:43 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[13-Jul-2016 14:57:43 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[13-Jul-2016 14:57:43 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[13-Jul-2016 14:57:43 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[13-Jul-2016 14:57:43 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[13-Jul-2016 14:57:43 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[13-Jul-2016 14:57:43 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[13-Jul-2016 14:57:43 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[13-Jul-2016 14:57:43 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[13-Jul-2016 14:57:43 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[13-Jul-2016 14:57:43 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 14:57:43 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 14:57:43 Europe/London] PHP  17. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
+[13-Jul-2016 14:57:43 Europe/London] PHP  18. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
+[13-Jul-2016 14:57:43 Europe/London] PHP  19. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[13-Jul-2016 15:08:30 Europe/London] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php on line 195
+[13-Jul-2016 15:08:30 Europe/London] PHP Stack trace:
+[13-Jul-2016 15:08:30 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[13-Jul-2016 15:08:30 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[13-Jul-2016 15:08:30 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[13-Jul-2016 15:08:30 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[13-Jul-2016 15:08:30 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[13-Jul-2016 15:08:30 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[13-Jul-2016 15:08:30 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[13-Jul-2016 15:08:30 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[13-Jul-2016 15:08:30 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[13-Jul-2016 15:08:30 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[13-Jul-2016 15:08:30 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[13-Jul-2016 15:08:30 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[13-Jul-2016 15:08:30 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[13-Jul-2016 15:08:30 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[13-Jul-2016 15:08:30 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 15:08:30 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 15:08:30 Europe/London] PHP  17. Helpers\PaypalAP::splitPay() /home/ubuntu/workspace/PayPalAP/app/Controllers/Paypal.php:43
+[13-Jul-2016 21:04:08 Europe/London] PHP Parse error:  syntax error, unexpected 'return' (T_RETURN) in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php on line 96
+[13-Jul-2016 21:04:08 Europe/London] PHP Stack trace:
+[13-Jul-2016 21:04:08 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[13-Jul-2016 21:04:08 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[13-Jul-2016 21:04:08 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[13-Jul-2016 21:04:08 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[13-Jul-2016 21:04:08 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[13-Jul-2016 21:04:08 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[13-Jul-2016 21:04:08 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[13-Jul-2016 21:04:08 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[13-Jul-2016 21:04:08 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[13-Jul-2016 21:04:08 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[13-Jul-2016 21:04:08 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[13-Jul-2016 21:04:08 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[13-Jul-2016 21:04:08 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[13-Jul-2016 21:04:08 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[13-Jul-2016 21:04:08 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 21:04:08 Europe/London] PHP  16. App\Controllers\Paypal->pay() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[13-Jul-2016 21:04:08 Europe/London] PHP  17. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
+[13-Jul-2016 21:04:08 Europe/London] PHP  18. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
+[13-Jul-2016 21:04:08 Europe/London] PHP  19. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301

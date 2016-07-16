@@ -1,0 +1,46 @@
+* Hostname was NOT found in DNS cache
+*   Trying 173.0.82.89...
+* Connected to svcs.sandbox.paypal.com (173.0.82.89) port 443 (#0)
+* successfully set certificate verify locations:
+*   CAfile: none
+  CApath: /etc/ssl/certs
+* SSL connection using AES256-SHA256
+* Server certificate:
+* 	 subject: C=US; ST=California; L=San Jose; O=PayPal, Inc.; OU=PayPal Production; CN=svcs.sandbox.paypal.com
+* 	 start date: 2016-01-13 00:00:00 GMT
+* 	 expire date: 2018-01-12 23:59:59 GMT
+* 	 issuer: C=US; O=Symantec Corporation; OU=Symantec Trust Network; CN=Symantec Class 3 Secure Server CA - G4
+* 	 SSL certificate verify ok.
+> POST /AdaptivePayments/Pay HTTP/1.1
+Host: svcs.sandbox.paypal.com
+Accept: */*
+X-PAYPAL-SECURITY-USERID: teamscarpa-facilitator_api1.gmail.com
+X-PAYPAL-SECURITY-PASSWORD: X9C6GA6JFM85GA8H
+X-PAYPAL-SECURITY-SIGNATURE: AFcWxV21C7fd0v3bYYYRCpSSRl31AUdJlJ7WKvwwCfr5Km0licmZGSGT
+X-PAYPAL-REQUEST-DATA-FORMAT: JSON
+X-PAYPAL-RESPONSE-DATA-FORMAT: JSON
+X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T
+Content-Length: 353
+Content-Type: application/x-www-form-urlencoded
+
+* upload completely sent off: 353 out of 353 bytes
+< HTTP/1.1 200 OK
+< Date: Fri, 15 Jul 2016 07:53:36 GMT
+* Server Apache is not blacklisted
+< Server: Apache
+< X-EBAY-SOA-REQUEST-ID: 155ed8be-4af0-a488-6782-c2eeffe0fccf!AdaptivePayments!10.72.134.120![]
+< X-PAYPAL-SERVICE-VERSION: 1.0.0
+< X-PAYPAL-SERVICE-NAME: {http://svcs.paypal.com/types/ap}AdaptivePayments
+< X-EBAY-SOA-RESPONSE-DATA-FORMAT: JSON
+< X-PAYPAL-OPERATION-NAME: Pay
+< X-EBAY-SOA-MESSAGE-PROTOCOL: NONE
+< Vary: Accept-Encoding
+< HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+< Paypal-Debug-Id: ec190a4b28381
+< Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.APIT.1%26silo_version%3D1880%26app%3Dadaptivepaymentspartaweb_api3t%26TIME%3D2157348951%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 15 Jul 2016 08:23:36 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+< Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+< Connection: close
+< Transfer-Encoding: chunked
+< Content-Type: application/json;charset=UTF-8
+< 
+* Closing connection 0
