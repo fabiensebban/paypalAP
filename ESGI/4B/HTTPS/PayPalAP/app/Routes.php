@@ -17,6 +17,7 @@ Router::any('subscribe', 'App\Controllers\Subscription@subscribe');
 
 //Paypal API routes
 Router::any('paypal/pay', 'App\Controllers\Paypal@pay');
+Router::any('paypal/refund', 'App\Controllers\Paypal@refund');
 
 /** End static Routes */
 

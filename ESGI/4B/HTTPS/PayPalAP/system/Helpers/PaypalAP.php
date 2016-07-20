@@ -33,7 +33,7 @@ class PaypalAP
 			);
 	    
 	        $this->envelope = array(				
-	                    "errorLanguage"  => "fr_FR",
+	                    "errorLanguage"  => "en_US",
 	    				"detailLevel"    => "ReturnAll"
 					);
     	}
@@ -95,14 +95,30 @@ class PaypalAP
 		return $this->_paypalSend($createPacket, "Pay");
 	}
 	
+
+	/*
+	Command Line: 
+	
+	curl https://svcs.sandbox.paypal.com/AdaptivePayments/Refund \
+	  -s \
+	  --insecure \
+	  -H "X-PAYPAL-SECURITY-USERID: teamscarpa-facilitator_api1.gmail.com" \
+	  -H "X-PAYPAL-SECURITY-PASSWORD: X9C6GA6JFM85GA8H" \
+	  -H "X-PAYPAL-SECURITY-SIGNATURE: AFcWxV21C7fd0v3bYYYRCpSSRl31AUdJlJ7WKvwwCfr5Km0licmZGSGT" \
+	  -H "X-PAYPAL-REQUEST-DATA-FORMAT: NV" \
+	  -H "X-PAYPAL-RESPONSE-DATA-FORMAT: NV" \
+	  -H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T "   \
+	  -d requestEnvelope.errorLanguage=en_US \
+	  -d payKey=AP-5H693988ER680773J
+	*/
+	
+	
 	function refund($payKey)
 	{
+		$payKey = "payKey=" . $payKey;
+		//$refundParams = array($payKey, "requestEnvelope.errorLanguage=en_US");
 		
-		//$payKey1 = "payKey=6GD48770HP9601931" ;
-		$payKey1 = "transactionId=3FG328258X4984332";
-		//$payKey = $payKey . "&receiverList.receiver(0).amount=100&currencyCode=EUR";
-		
-		return $this->_paypalSend($payKey1, "Refund"); 
+		return $this->_paypalSend($payKey, "Refund"); 
 	}
 
 	// curl wrapper for sending things to paypal
@@ -120,6 +136,12 @@ class PaypalAP
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_POST, 1);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
+		
+		if ($call == "Refund")
+		{
+			curl_setopt($ch, CURLOPT_POSTFIELDS, "requestEnvelope.errorLanguage=en_US");	
+		}
+		
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $this->headers);
 
 		// For debuguing
@@ -135,6 +157,38 @@ class PaypalAP
 		return json_decode($payPalResponse, TRUE);
 	}
 
+
+/*
+	Commande Line: 
+	
+	curl https://svcs.sandbox.paypal.com/AdaptivePayments/Pay \
+	-s \
+   --insecure \
+   -H "X-PAYPAL-SECURITY-USERID: teamscarpa-facilitator_api1.gmail.com" \
+   -H "X-PAYPAL-SECURITY-PASSWORD: X9C6GA6JFM85GA8H" \
+   -H "X-PAYPAL-SECURITY-SIGNATURE: AFcWxV21C7fd0v3bYYYRCpSSRl31AUdJlJ7WKvwwCfr5Km0licmZGSGT" \
+   -H "X-PAYPAL-REQUEST-DATA-FORMAT: JSON" \
+   -H "X-PAYPAL-RESPONSE-DATA-FORMAT: JSON" \
+   -H "X-PAYPAL-APPLICATION-ID: APP-80W284485P519543T" \
+   -d '{
+   "actionType":"PAY",
+   "currencyCode":"USD",
+   "receiverList":{
+     "receiver":[
+       {
+         "amount":"1.00",
+         "email":"adama_sakho-facilitator@hotmail.com"
+       }
+     ]
+   },
+   "returnUrl":"http://www.example.com/success.html",
+   "cancelUrl":"http://www.example.com/failure.html",
+   "requestEnvelope":{
+     "errorLanguage":"en_US",
+     "detailLevel":"ReturnAll"
+   }
+ }'
+*/
 	function splitPay($returnUrl, $cancelUrl, $merchantEmail, $marketplaceEmail, $merchantAmount, $marketPlaceAmount) 
 	{
 		if(!$this->_users)
@@ -180,9 +234,8 @@ class PaypalAP
 		$response = $this->_paypalSend($detailsPacket, "SetPaymentOptions");
 		$dets = $this->getPaymentOptions("AP-6GD48770HP9601931");
 		*/
-		//var_dump($dets);die;
 	
-		
+		/*
 		$refundparams = array(
 			'payKey' => 'AP-6GD48770HP9601931',
 			'receiverList.receiver(0).email' => 'teamscarpa-facilitator@gmail.com',
@@ -192,8 +245,7 @@ class PaypalAP
 		    'requestEnvelope.errorLanguage' => 'fr_FR',
 		    'currencyCode' => 'EUR'
 			);
-		
-		//var_dump($this->refund($refundparams)); die;
+		*/
 	
 		return array('error'		=> false, 
 					 'url'			=> $this->paypalUrl . $payKey,
@@ -209,55 +261,5 @@ class PaypalAP
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	function splitPay1($returnUrl, $cancelUrl, $merchantEmail, $marketplaceEmail, $merchantAmount, $marketPlaceAmount)
-	{
-		
-		//setting the curl parameters.
-		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, $this->apiUrl . "Refund");
-		curl_setopt($ch, CURLOPT_VERBOSE, 1);
-		//turning off the server and peer verification(TrustManager Concept).
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
-		curl_setopt($ch, CURLOPT_POST, 1);
-		
-		// Set the HTTP Headers
-		curl_setopt($ch, CURLOPT_HTTPHEADER,  $this->headers);
-	
-	    
-		// RequestEnvelope fields
-		$detailLevel	= urlencode("ReturnAll");	// See DetailLevelCode in the WSDL for valid enumerations
-		$errorLanguage	= urlencode("en_US");		// This should be the standard RFC 3066 language identification tag, e.g., en_US
-		// NVPRequest for submitting to server
-		$nvpreq = "requestEnvelope.errorLanguage=$errorLanguage&requestEnvelope.detailLevel=$detailLevel";
-		//setting the nvpreq as POST FIELD to cur
-		$refundparams = array(
-			'payKey' => 'AP-5GS45958PF893380G',
-			'receiverList.receiver(0).email' => 'merchant@email.com',
-		    'receiverList.receiver(0).amount' => '100',
-		    'receiverList.receiver(1).email' => 'market@place.com',
-		    'receiverList.receiver(1).amount' => '10',
-		    'requestEnvelope.errorLanguage' => 'fr_FR',
-		    'currencyCode' => 'EUR'
-			);
-		curl_setopt($ch, CURLOPT_POSTFIELDS, $refundparams);
-		//getting response from server
-		$response = curl_exec($ch);
-	
-		var_dump($response) ; die;
-	}
-	
-	
-	
-	
-	
-    
 }
 ?>

@@ -35,6 +35,8 @@ class Paypal extends Controller
         UserId=wergv&ReturnUrl=http://www.return.com&CancelUrl=http://www.cancel.com&MarketPlaceEmail=market@place.com&MerchantEmail=merchant@email.com&AmountMarketPlace=10&AmountMerchant=100
       
     */
+    
+    // API Pay
     public function pay()
     {
         if($this->isValidPayPost($_POST))
@@ -48,6 +50,32 @@ class Paypal extends Controller
 			$errorMessage = array('error' => true, 'errorMessage' => 'You did not fill all the post params');
 			return json_encode($errorMessage);
         }
+    }
+    
+    // API Refund
+    public function refund()
+    {
+        if($this->isValidRefundPost($_POST))
+        {
+            $PayPalHelper = new PaypalAP($_POST['UserId']);
+            $result = $PayPalHelper->refund($_POST['payKey']);
+            return json_encode($result);
+        }
+        else 
+        {
+			$errorMessage = array('error' => true, 'errorMessage' => 'You did not fill all the post params');
+			return json_encode($errorMessage);
+        }
+    }
+    
+    private function isValidRefundPost($postdata)
+    {
+        if (isset($postdata['UserId']) 
+        && isset($postdata['payKey']))
+            return true;
+
+        else 
+            return false;
     }
     
     private function isValidPayPost($postdata)

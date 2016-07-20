@@ -469,3 +469,24 @@
 [13-Jul-2016 21:04:08 Europe/London] PHP  17. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
 [13-Jul-2016 21:04:08 Europe/London] PHP  18. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:42
 [13-Jul-2016 21:04:08 Europe/London] PHP  19. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301
+[20-Jul-2016 13:32:42 Europe/London] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php on line 142
+[20-Jul-2016 13:32:42 Europe/London] PHP Stack trace:
+[20-Jul-2016 13:32:42 Europe/London] PHP   1. {main}() /home/ubuntu/workspace/PayPalAP/public/index.php:0
+[20-Jul-2016 13:32:42 Europe/London] PHP   2. require() /home/ubuntu/workspace/PayPalAP/public/index.php:37
+[20-Jul-2016 13:32:42 Europe/London] PHP   3. Foundation\Application->run() /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php:257
+[20-Jul-2016 13:32:42 Europe/London] PHP   4. Stack\StackedHttpKernel->handle() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:533
+[20-Jul-2016 13:32:42 Europe/London] PHP   5. Cookie\Guard->handle() /home/ubuntu/workspace/PayPalAP/vendor/stack/builder/src/Stack/StackedHttpKernel.php:23
+[20-Jul-2016 13:32:42 Europe/London] PHP   6. Cookie\Queue->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Guard.php:54
+[20-Jul-2016 13:32:42 Europe/London] PHP   7. Session\Middleware->handle() /home/ubuntu/workspace/PayPalAP/system/Cookie/Queue.php:49
+[20-Jul-2016 13:32:42 Europe/London] PHP   8. App\Extensions\Http\ContentGuard->handle() /home/ubuntu/workspace/PayPalAP/system/Session/Middleware.php:72
+[20-Jul-2016 13:32:42 Europe/London] PHP   9. Foundation\Application->handle() /home/ubuntu/workspace/PayPalAP/app/Extensions/Http/ContentGuard.php:61
+[20-Jul-2016 13:32:42 Europe/London] PHP  10. Foundation\Application->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:639
+[20-Jul-2016 13:32:42 Europe/London] PHP  11. Routing\Router->dispatch() /home/ubuntu/workspace/PayPalAP/system/Foundation/Application.php:655
+[20-Jul-2016 13:32:42 Europe/London] PHP  12. Routing\Router->invokeObject() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:526
+[20-Jul-2016 13:32:42 Europe/London] PHP  13. Routing\Router->invokeController() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:475
+[20-Jul-2016 13:32:42 Europe/London] PHP  14. Core\Controller->execute() /home/ubuntu/workspace/PayPalAP/system/Routing/Router.php:446
+[20-Jul-2016 13:32:42 Europe/London] PHP  15. call_user_func_array:{/home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133}() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[20-Jul-2016 13:32:42 Europe/London] PHP  16. App\Controllers\Paypal->refund() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:133
+[20-Jul-2016 13:32:42 Europe/London] PHP  17. spl_autoload_call() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:60
+[20-Jul-2016 13:32:42 Europe/London] PHP  18. Composer\Autoload\ClassLoader->loadClass() /home/ubuntu/workspace/PayPalAP/system/Core/Controller.php:60
+[20-Jul-2016 13:32:42 Europe/London] PHP  19. Composer\Autoload\includeFile() /home/ubuntu/workspace/PayPalAP/vendor/composer/ClassLoader.php:301

@@ -1299,3 +1299,7 @@ Stack trace:
 #15 /home/ubuntu/workspace/PayPalAP/app/Boot/Start.php(257): Foundation\Application->run()
 #16 /home/ubuntu/workspace/PayPalAP/public/index.php(37): require('/home/ubuntu/wo...')
 #17 {main} [] []
+[2016-07-20 13:32:42] production.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected ')'' in /home/ubuntu/workspace/PayPalAP/system/Helpers/PaypalAP.php:142
+Stack trace:
+#0 [internal function]: Exception\Handler->handleShutdown()
+#1 {main} [] []

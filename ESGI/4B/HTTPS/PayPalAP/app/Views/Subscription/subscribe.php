@@ -15,9 +15,10 @@
 	      <h3>Create a payment order</h3>
 	      <pre>
     	      <code>
+    	      	uri = URI('https://unittest-fabiensebban.c9users.io/paypal/pay/')
     	          response = Net::HTTP.post_form(uri,
                                      'UserId'            => <?php echo $data['userId']; ?>,
-                                     'ReturnUrl'         => [RETUNR URL],
+                                     'ReturnUrl'         => [RETURN URL],
                                      'CancelUrl'         => [CANCEL URL],
                                      'MarketPlaceEmail'  => [MARKETPALCE EMAIL],
                                      'MerchantEmail'     => [MERCHANT EMAIL],
