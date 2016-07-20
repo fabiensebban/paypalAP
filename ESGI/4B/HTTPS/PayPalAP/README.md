@@ -22,4 +22,4 @@ Après avoir valider le formulaire, vous trouverez une page expliquant le code R
 
 ## License
 
-The Nova Framework is under the MIT License, you can view the license [here](https://github.com/nova-framework/framework/blob/master/LICENSE.txt).
+This is an open source project
