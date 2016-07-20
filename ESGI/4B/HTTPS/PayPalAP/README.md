@@ -4,6 +4,7 @@
 ## Accès à la page de configuration
 
 Rendez-vous sur https://unittest-fabiensebban.c9users.io/ (https://unittest-fabiensebban.c9users.io/) pour accéder à la page de configuration.
+Si le serverur ne répond pas, vous pouvez me contacter au 06 60 94 14 78
 
 ## Remplissage des informations
 
@@ -14,6 +15,33 @@ Veuillez saisir toutes vos informations concernant votre compte:
 - API User de Paypal: fourni pas Paypal
 - API Password de Paypal: fourni pas Paypal
 - API Signature de Paypal: fourni pas Paypal
+
+## API ScarPay
+
+/Pay [POST]
+POST params :
+- UserId
+- ReturnUrl
+- CancelUrl
+- MarketPlaceEmail
+- MerchantEmail
+- AmountMarketPlace
+- AmountMerchant
+
+Response:
+  "error": (boolean),
+  "errorMessage": (if error),
+  "url": ((if !error) Pay URL),
+  "payKey": (Paypal key)
+
+/Refund [POST]
+- payKey
+
+Response
+  "error": (boolean),
+  "errorMessage": (if error),
+  "url": ((if !error) Pay URL),
+  "payKey": (Paypal key)
 
 ## Code Ruby à insérer
 
